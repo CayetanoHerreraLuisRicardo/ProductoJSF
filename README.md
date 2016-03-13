@@ -1,5 +1,5 @@
 # ProductoJSF
-###Proyecto poniendo en practica el uso de la tecnología y framework JavaServer Faces (JSF) para aplicaciones Java, tambien se hizo uso del famoso framework CSS Bootstrap v3.3.4. Para la BD se hizo uso de MySQL como SGBD.
+###Proyecto poniendo en practica el uso de la tecnología y framework JavaServer Faces (JSF) para aplicaciones Java, tambien se hizo uso del famoso framework CSS Bootstrap v3.3.4. Para la BD se hizo uso de derby.
 
 Este fue una practica que realice en la universidad donde hice uso de las peraciones CRUD de una tabla llamada producto. Tambien se implemento la parte de paginacion y diversas funcionalidades para hacer mas interactiva la aplicación.
 
