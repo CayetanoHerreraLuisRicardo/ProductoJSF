@@ -18,14 +18,14 @@ Tecnologias utilizadas:
 
 > Screenshot pagination:
 
-![paginacion-JSF](https://github.com/CayetanoHerreraLuisRicardo/ProductoJSF/blob/master/paginacion-JSF.jpg)
+![paginacion-JSF](https://github.com/CayetanoHerreraLuisRicardo/ProductoJSF/blob/master/paginacion-JSF.PNG)
 
 
 > Screenshot search:
 
-![search-JSF](https://github.com/CayetanoHerreraLuisRicardo/ProductoJSF/blob/master/buscar-JSF.jpg)
+![search-JSF](https://github.com/CayetanoHerreraLuisRicardo/ProductoJSF/blob/master/buscar-JSF.PNG)
 
 
 > Screenshot home:
 
-![home-JSF](https://github.com/CayetanoHerreraLuisRicardo/ProductoJSF/blob/master/inicio-JSF.jpg)
+![home-JSF](https://github.com/CayetanoHerreraLuisRicardo/ProductoJSF/blob/master/inicio-JSF.PNG)
