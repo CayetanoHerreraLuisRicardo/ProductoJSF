@@ -14,17 +14,18 @@ Tecnologias utilizadas:
 - Framework Java: JavaServer Faces (JSF v2.2)  ==> http://www.oracle.com/technetwork/java/javaee/javaserverfaces-139869.html
 - Framework CSS: Bootstrap v3.3.4 ==> http://getbootstrap.com/getting-started
 - DB: Derby Apache v10.11.1.2 ==> https://db.apache.org/derby
+- Proveedor de persistencia: JPA 2.2
 
-> Screenshot Paginacion:
+> Screenshot pagination:
 
 ![paginacion-JSF](https://github.com/CayetanoHerreraLuisRicardo/ProductoJSF/blob/master/paginacion-JSF.jpg)
 
 
-> Screenshot busqueda:
+> Screenshot search:
 
-![paginacion-JSF](https://github.com/CayetanoHerreraLuisRicardo/ProductoJSF/blob/master/buscar-JSF.jpg)
+![search-JSF](https://github.com/CayetanoHerreraLuisRicardo/ProductoJSF/blob/master/buscar-JSF.jpg)
 
 
-> Screenshot pagina de inicio:
+> Screenshot home:
 
-![paginacion-JSF](https://github.com/CayetanoHerreraLuisRicardo/ProductoJSF/blob/master/inicio-JSF.jpg)
+![home-JSF](https://github.com/CayetanoHerreraLuisRicardo/ProductoJSF/blob/master/inicio-JSF.jpg)
