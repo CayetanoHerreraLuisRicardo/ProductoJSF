@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <ui:include src="head.xhtml" />
+    </h:head>
+    <h:body>
+        <ui:include src="header.xhtml" />
+        <f:view>
+            <br/>
+            <br/>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12" style="margin: 0px 0px 0px -80px;">
+                        <ul class="pager">
+                            <h3  >Agregar Producto</h3>                            
+                        </ul>
+                    </div>
+                </div>
+                    
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <h:form styleClass="form-horizontal">
+                            <div class="form-group">
+                                <label for="inputName" class="control-label col-xs-2">Id:</label>
+                                <div class="col-xs-10">
+                                    <h:inputText id="id" value="#{admonProducto.pro.id}" title="Id" required="true" requiredMessage="Intodusca el Id"/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputName" class="control-label col-xs-2">Descripcion:</label>
+                                <div class="col-xs-10">
+                                    <h:inputText id="descripcion" value="#{admonProducto.pro.descripcion}" title="Descripcion" required="true" requiredMessage="Introdusca la descripcion"/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputName" class="control-label col-xs-2">Precio:</label>
+                                <div class="col-xs-10">
+                                    <h:inputText id="precio" value="#{admonProducto.pro.precio}" title="Precio" required="true" requiredMessage="Introdusca el precio"/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputName" class="control-label col-xs-2">Cantidad:</label>
+                                <div class="col-xs-10">
+                                    <h:inputText id="cantidad" value="#{admonProducto.pro.cantidad}" title="Cantidad" required="true" requiredMessage="Introdusca la cantidad"/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                
+                                <div class="col-xs-3"></div>
+                                <div class="col-md-2" style="margin: 0px 20px 0px 0px;">
+                                    <h:commandLink styleClass="btn btn-success" action="index" actionListener="#{admonProducto.agregaProd(e)}">
+                                    <i class="glyphicon glyphicon-floppy-save"> Agregar</i>
+                                    </h:commandLink>
+                                </div>
+                            </div>
+                        </h:form>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+            </div>
+        </f:view>
+    </h:body>
+</html>
+

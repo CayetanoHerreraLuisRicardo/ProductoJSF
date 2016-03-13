@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <ui:include src="head.xhtml" />
+    </h:head>
+    <h:body>
+        <ui:include src="header.xhtml" />
+        <f:view>
+            <br/>
+            <br/>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="pager">
+                            <h3>Listar Productos</h3>                            
+                        </ul>
+                    </div>
+
+                    <div class="col-md-12">
+                        <h:form>
+                            <h:dataTable styleClass="table table-striped" value="#{admonProducto.tabla}" var="item">
+                                <h:column>
+                                    <f:facet name="header">
+                                        <h:outputText value="Id"/>
+                                    </f:facet>
+                                    <h:outputText value="#{item.id}"/>
+                                </h:column>
+                                <h:column>
+                                    <f:facet name="header">
+                                        <h:outputText value="Descripcion"/>
+                                    </f:facet>
+                                    <h:outputText value="#{item.descripcion}"/>
+                                </h:column>
+                                <h:column>
+                                    <f:facet name="header">
+                                        <h:outputText value="Precio"/>
+                                    </f:facet>
+                                    <h:outputText value="#{item.precio}"/>
+                                </h:column>
+                                <h:column>
+                                    <f:facet name="header">
+                                        <h:outputText value="Cantidad"/>
+                                    </f:facet>
+                                    <h:outputText value="#{item.cantidad}"/>
+                                </h:column>
+                                <h:column>
+                                    <f:facet name="header">
+                                        <h:outputText value="Editar"/>
+                                    </f:facet>
+                                    <h:commandLink styleClass="btn btn-info" action="editar2" actionListener="#{admonProducto.editarid(e,item.id)}">
+                                    <i class="glyphicon glyphicon-edit"> Editar</i>
+                                    </h:commandLink>
+                                </h:column>
+                                <h:column>
+                                    <f:facet name="header">
+                                        <h:outputText value="Eliminar"/>
+                                    </f:facet>
+                                    <h:commandLink styleClass="btn btn-danger" action="eliminado" actionListener="#{admonProducto.eliminarid(e,item)}">
+                                    <i class="glyphicon glyphicon-trash"> Eliminar</i>
+                                    </h:commandLink>
+                                </h:column>
+                            </h:dataTable>
+                        <nav>
+                            <ul class="pager">
+                                <li><h:commandLink action="listar" actionListener="#{admonProducto.prodsPaginaInicio(e)}"> <span aria-hidden="true">&larr;</span> Inicio</h:commandLink></li>
+                                <li><h:commandLink styleClass="btn btn-default" value="Anterior" action="listar" actionListener="#{admonProducto.prodsPaginaAnterior(e)}"/> </li>
+                                <li><h:commandLink styleClass="btn btn-default" value="Siguiente" action="listar" actionListener="#{admonProducto.prodsPaginaSiguiente(e)}"/> </li>
+                                <li><h:commandLink action="listar" actionListener="#{admonProducto.prodsPaginaFin(e)}">Fin <span aria-hidden="true">&rarr;</span></h:commandLink></li>
+                            </ul>
+                        </nav>
+                        </h:form>
+                    </div>
+                </div>
+            </div>
+        </f:view>
+    
+    <h:outputScript name="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" />
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <h:outputScript name="bootstrap/css/bootstrap.min.css" />
+    </h:body>
+</html>
